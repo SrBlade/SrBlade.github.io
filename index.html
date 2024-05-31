@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Monedas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tasa de cambio</h1>
+        <div class="converter">
+            <input type="number" id="amount" placeholder="Cantidad" />
+            <select id="fromCurrency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="JPY">JPY</option>
+                <option value="DOP">DOP</option>
+                <option value="PMX">PMX</option>
+                <option value="REA">REA</option>
+                
+            </select>
+            <select id="toCurrency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="JPY">JPY</option>
+                <option value="DOP">DOP</option>
+                <option value="PMX">PMX</option>
+                <option value="REA">REA</option>
+            </select>
+            <button onclick="convert()">Convertir</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
+
